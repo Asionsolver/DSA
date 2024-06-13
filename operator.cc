@@ -40,17 +40,6 @@ int main()
     // cout << (value > 0 || value < 10) << endl;
     // cout << !(value > 0) << endl;
 
-    // bitwise operators -> &, |, ^, ~, <<, >>
-    // int a = 5; // 101
-    // int b = 2; // 010
-
-    // cout << (a & b) << endl; // 000
-    // cout << (a | b) << endl; // 111
-    // cout << (a ^ b) << endl; // 111
-    // cout << (~a) << endl; // 11111111111111111111111111111010
-    // cout << (a << 1) << endl; // 1010
-    // cout << (a >> 1) << endl; // 10
-
     // conditional operators -> ?:
     // int a = 5;
     // int b = 2;
