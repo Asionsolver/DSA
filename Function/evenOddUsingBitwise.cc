@@ -1,0 +1,1 @@
+// ! Check Even or Odd using bitwise operator.
