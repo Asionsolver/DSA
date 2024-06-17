@@ -15,9 +15,9 @@ void printAllPairs(int arr[], int size)
 
 int main()
 {
-    // int arr[] = {4, 5, 9, 11, 7, 8, 6, 5, 2, 3, 1};
-    // int size = 11;
-    int arr[] = {4, 5, 9};
+    /
+
+        int arr[] = {4, 5, 9};
     int size = 3;
 
     cout << "Printing all pairs of numbers " << endl;
