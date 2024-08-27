@@ -3,6 +3,12 @@ using namespace std;
 
 int main()
 {
+
+    // What is Array?
+    // array is a linear data structure.
+    // collection of similar element or same datatype
+    // continuous memory block
+
     // int a = 5;
     // cout << "Address of a is " << &a << endl;
     // cout << "Size of a is " << sizeof(a) << endl;
@@ -30,7 +36,6 @@ int main()
     // int sum = 0;
     // for (int i = 0; i < 10; i++)
     // {
-
     //     cout << "Enter the value of " << i << " index : ";
     //     cin >> arr[i];
     // }
