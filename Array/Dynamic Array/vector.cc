@@ -31,6 +31,40 @@ int main()
     // default syntax of vector array: vector<data_type>array_name;
     // vector<int> v;
 
+    // ! Dynamic Array size
+    // int n;
+    // cout << "Enter size of array: ";
+    // cin >> n;
+
+    // vector<int> arr(n);
+
+    // Check size
+    // arr.size();
+
+    // Check empty
+    // arr.empty();
+
+    // Create vector
+    vector<int> arr;
+    // int ans = (sizeof(arr) / sizeof(int));
+    // cout << ans << endl;
+
+    // insert
+    arr.push_back(5);
+    arr.push_back(6);
+    arr.push_back(7);
+
+    // print
+    for (int i = 0; i < arr.size(); i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    cout << "Vector arr is Empty or not " << arr.empty() << endl;
+
+    vector<int> brr;
+    cout << "Vector brr is Empty or not " << brr.empty() << endl;
     // ! vector initialization rule
     // vector<int> arr(5, 1);
     // arr.push_back(5);
@@ -103,8 +137,9 @@ int main()
     // v.clear();
     // vectorArray(v);
 
-    vector<int> arr{4, 3, 2, 24, 422, 223, 32};
-    vectorArray(arr);
+    // vector<int>
+    //     arr{4, 3, 2, 24, 422, 223, 32};
+    // vectorArray(arr);
 
     return 0;
 }
