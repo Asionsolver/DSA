@@ -5,8 +5,8 @@ using namespace std;
 // Union of two array
 int main()
 {
-    int arrA[] = {1, 2, 3};
-    int arrB[] = {4, 5, 6};
+    int arrA[] = {1, 2, 3, 4};
+    int arrB[] = {4, 5, 6, 6, 6};
 
     int sizeA = 3;
     int sizeB = 3;
@@ -20,6 +20,7 @@ int main()
 
     for (int i = 0; i < sizeB; i++)
     {
+
         ans.push_back(arrB[i]);
     }
 
