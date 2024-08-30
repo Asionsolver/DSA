@@ -22,6 +22,9 @@ using namespace std;
 //     return -1;
 // }
 
+// T.C -> O(n^2)
+// S.C -> O(1)
+
 int optimizeFirstRepeatingElement(vector<int> nums)
 {
     unordered_map<int, int> hash;
@@ -41,6 +44,9 @@ int optimizeFirstRepeatingElement(vector<int> nums)
 
     return -1;
 }
+
+// T.C -> O(n)
+// S.C -> O(n)
 
 int main()
 {
