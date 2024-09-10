@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
-// ! LeetCode problem no: 287
+// Question: LeetCode problem no: 287
 // Find the Duplicate Number
 int main()
 {
