@@ -7,10 +7,12 @@ using namespace std;
 
 void factorialLargeNumber(int number)
 {
-    vector<int> ans;
-    ans.push_back(1);
+
+    // Todo: The size of vector array
     // int size = ans.size();
     // cout << size << endl;
+    vector<int> ans;
+    ans.push_back(1);
     int carry = 0;
     for (int i = 2; i <= number; i++)
     {
