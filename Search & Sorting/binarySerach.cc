@@ -1,7 +1,7 @@
+// Question : Binary Search Algorithm
+
 #include <iostream>
 using namespace std;
-
-// Question : Binary Search Algorithm
 
 // Condition: Binary Search Algorithm
 // 1. Element should be in monotonic order or sorted. For example asc or dec order.
@@ -10,7 +10,9 @@ int binarySearch(int arr[], int size, int targetValue)
 {
     int start = 0;
     int end = size - 1;
-    int mid = (start + end) / 2;
+    // int mid = (start + end) / 2;  // ! overflow issue. So this logic not suitable for every logic
+
+    int mid = start + (end - start) / 2; // Note: Suitable for every logic
 
     while (start <= end)
 
@@ -32,7 +34,7 @@ int binarySearch(int arr[], int size, int targetValue)
             start = mid + 1;
         }
 
-        mid = (start + end) / 2;
+        mid = start + (end - start) / 2;
     }
 
     return -1;
@@ -72,3 +74,5 @@ int main()
 
     return 0;
 }
+
+// *: T.C O(k)= O(log n)
