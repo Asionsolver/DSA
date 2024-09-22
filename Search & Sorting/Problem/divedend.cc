@@ -50,12 +50,14 @@ int divideTwoNumber(int dividend, int divisor)
 
 int main()
 {
-    int dividend = 0;
-    int divisor = 0;
+    int dividend = 21;
+    int divisor = 5;
 
     int ans = divideTwoNumber(dividend, divisor);
 
-    cout << "Your ans is " << ans << endl;
+    double finalResult = ans;
+
+    cout << "Your ans is " << finalResult << endl;
 
     return 0;
 }
