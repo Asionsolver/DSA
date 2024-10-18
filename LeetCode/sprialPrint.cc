@@ -4,7 +4,6 @@
 #include <iostream>
 using namespace std;
 #include <vector>
-using namespace std;
 
 void spiralPrint(vector<vector<int>> v)
 {
