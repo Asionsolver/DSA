@@ -1,5 +1,5 @@
 // Question : Allocate minimum number of page. This problem know as book allocation problem.
-
+#include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -10,8 +10,67 @@ using namespace std;
  * Each book will be allocated to exactly  one students. Each student has to be allocated at least one book.
  * Note: Return -1 if a valid assignment is not possible, and allotment should be in contiguous order(see the explanation for better understanding)
  */
+bool isPossibleSolution(int arr[], int N, int M, int mid)
+{
+    int pageSum = 0;
+    int count = 1;
+
+    for (int i = 0; i < N; i++)
+    {
+        if (arr[i] > mid)
+        {
+            return false;
+        }
+        if (pageSum + arr[i] > mid)
+        {
+            count++;
+            pageSum = arr[i];
+            if (count > M)
+            {
+                return false;
+            }
+        }
+        else
+        {
+            pageSum += arr[i];
+        }
+    }
+    return true;
+}
+
+int findPage(int arr[], int N, int M)
+{
+    if (M > N)
+    {
+        return -1;
+    }
+
+    int start = 0;
+    int end = accumulate(arr, arr + N, 0);
+    int ans = -1;
+
+    while (start <= end)
+    {
+        int mid = start + (end - start) / 2;
+
+        if (isPossibleSolution(arr, N, M, mid))
+        {
+            ans = mid;
+            end = mid - 1;
+        }
+        else
+        {
+            start = mid + 1;
+        }
+    }
+}
 int main()
 {
+    int arr[] = {12, 34, 67, 90};
+    int N = 4;
+    int M = 2;
+
+    cout << findPage(arr, N, M);
 
     return 0;
 }
