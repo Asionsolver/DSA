@@ -53,8 +53,7 @@ int main()
         17,
         21,
         25,
-        27,
-    };
+        27};
 
     int targetValue = 5;
 
