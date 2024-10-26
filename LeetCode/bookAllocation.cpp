@@ -21,15 +21,19 @@ bool isPossibleSolution(int arr[], int N, int M, int mid)
         {
             return false;
         }
+        // when two book sum is greater than mid. Then first book allocate 1st student not allocate two book first student because two book sum is greater than mid.
         if (pageSum + arr[i] > mid)
         {
             count++;
             pageSum = arr[i];
+
+            // When book allocation is greater than student. Then return false.
             if (count > M)
             {
                 return false;
             }
         }
+        // when two book sum is not greater than mid. Then first and second book allocate 1st student  because two book sum is not greater than mid.
         else
         {
             pageSum += arr[i];
