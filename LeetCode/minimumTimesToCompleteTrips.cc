@@ -12,12 +12,22 @@ bool check(long long mid, long long times[], long long totalTrip, long long size
     for (int i = 0; i < size; i++)
     {
         trips += mid / times[i];
-        if (trips >= totalTrip) // Check if trips are sufficient
-        {
-            return true;
-        }
+        // if (trips >= totalTrip) // Check if trips are sufficient
+        // {
+        //     return true;
+        // }
     }
-    return false; // Return false if trips are not sufficient
+    // Solution 1:
+    // return false; // Return false if trips are not sufficient
+    // Solution 2:
+    if (trips < totalTrip)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
 }
 
 long long minimumTime(long long times[], long long totalTrip, long long size)
@@ -32,8 +42,8 @@ long long minimumTime(long long times[], long long totalTrip, long long size)
     {
         mx = max(mx, times[i]);
     }
-    long long end = mx * totalTrip;
     long long result = -1;
+    long long end = mx * totalTrip;
     while (start <= end)
     {
         long long mid = start + (end - start) / 2;
