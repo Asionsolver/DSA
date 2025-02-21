@@ -32,25 +32,129 @@ int main(){
     // address of ptr
     // cout<<"Address of ptr: "<<&ptr<<endl;
 
-    int a = 5;
+    // int a = 5;
 
-    // pointer create
-    int* ptr = &a;
+    
+    // int* ptr = &a; // pointer create
 
-    char ch = 'A';
+    // char ch = 'A';
 
-    // pointer create
-    char* ptr1 = &ch;
+    
+    // char* ptr1 = &ch; // pointer create
 
-    double d = 5.5;
+    // double d = 5.5;
 
-    // pointer create
-    double* ptr2 = &d;
+    
+    // double* ptr2 = &d; // pointer create
 
     // size of pointer
-    cout<<"Size of int pointer: "<<sizeof(ptr)<<endl; // Size of int pointer: 4
-    cout<<"Size of char pointer: "<<sizeof(ptr1)<<endl; // Size of char pointer: 4
-    cout<<"Size of double pointer: "<<sizeof(ptr2)<<endl; // Size of double pointer: 4
+    // cout<<"Size of int pointer: "<<sizeof(ptr)<<endl; // Size of int pointer: 4
+    // cout<<"Size of char pointer: "<<sizeof(ptr1)<<endl; // Size of char pointer: 4
+    // cout<<"Size of double pointer: "<<sizeof(ptr2)<<endl; // Size of double pointer: 4
+
+    
+    // int* ptr; // Bad practice: pointer is not initialized
+    // cout<<"Value of ptr: "<<*ptr<<endl; // segmentation fault
+
+    // int *ptr = 0; // Good practice: pointer is initialized with 0
+    // cout<<"Value of ptr: "<<*ptr<<endl; // segmentation fault
+
+    // int* ptr1 = NULL; // Good practice: pointer is initialized with NULL
+    // cout<<"Value of ptr1: "<<*ptr1<<endl; 
+    
+
+    // int* ptr = nullptr; // Good practice: pointer is initialized with nullptr
+    // cout<<"Value of ptr: "<<*ptr<<endl; 
+
+    // int a = 5;
+    // int* ptr = &a;
+
+    // cout<<"Address of a: "<<&a<<endl;
+    // cout<<"Value of a: "<<a<<endl;
+    // cout<<"Address of ptr: "<<ptr<<endl;
+    // cout<<"Value of ptr: "<<*ptr<<endl;
+    
+    // cout<<endl<<endl<<endl;
+    // a = a + 1;
+
+    // cout<<"Address of a: "<<&a<<endl;
+    // cout<<"Value of a: "<<a<<endl;
+    // cout<<"Address of ptr: "<<ptr<<endl;
+    // cout<<"Value of ptr: "<<*ptr<<endl;
+
+
+    // cout<<endl<<endl<<endl;
+    // ptr = ptr + 1;
+
+    // cout<<"Address of ptr: "<<ptr<<endl;
+
+    
+    // cout<<endl<<endl<<endl;
+    // *ptr = *ptr + 1;
+
+    // cout<<"Value of *ptr: "<<*ptr<<endl;
+
+    int a = 5;
+
+    int* ptr = &a;
+
+    // copy of pointer
+    int* copyPtr = ptr;
+
+
+
+    cout<<"Address of a: "<<&a<<endl;
+    cout<<"Value of a: "<<a<<endl;
+
+    cout<<endl<<endl<<endl;
+    cout<<"ptr"<<endl;
+    cout<<"Address of ptr: "<<ptr<<endl;
+    cout<<"Value of ptr: "<<*ptr<<endl;
+    cout<<"Address of ptr: "<<&ptr<<endl;
+
+    cout<<endl<<endl<<endl;
+    cout<<"copyPtr"<<endl;
+    cout<<"Address of copyPtr: "<<copyPtr<<endl;
+    cout<<"Value of copyPtr: "<<*copyPtr<<endl;
+    cout<<"Address of copyPtr: "<<&copyPtr<<endl;
+
+    // cout<< "*, +, -, /, %, ++"<<endl;
+    // cout<<"Value of *ptr * 2: "<<*ptr * 2<<endl;
+    // cout<<"Value of *ptr + 2: "<<*ptr + 2<<endl;
+    // cout<<"Value of *ptr - 2: "<<*ptr - 2<<endl;
+    // cout<<"Value of *ptr / 2: "<<*ptr / 2<<endl;
+    // cout<<"Value of *ptr % 2: "<<*ptr % 2<<endl;
+  
+
+    // cout<<endl<<endl<<endl;
+    // cout<< "Post increment operator: ++"<<endl;
+    // cout<<"Value of *ptr: "<<*ptr<<endl;
+    // cout<<"Value of *ptr++: "<<*ptr++<<endl;
+    // cout<<"Value of *ptr: "<<*ptr<<endl;
+    // cout<< "Post increment operator: ++"<<endl;
+    
+    // cout<<endl<<endl<<endl;
+    // cout<< "Pre increment operator: ++"<<endl;
+    // cout<<"Value of *ptr: "<<*ptr<<endl;
+    // cout<<"Value of ++*ptr: "<<++*ptr<<endl;
+    // cout<<"Value of *ptr: "<<*ptr<<endl;
+    // cout<< "Pre increment operator: ++"<<endl;
+
+
+    // cout<<endl<<endl<<endl;
+    // cout<< "Post decrement operator: --"<<endl;
+    // cout<<"Value of *ptr: "<<*ptr<<endl;
+    // cout<<"Value of *ptr--: "<<*ptr--<<endl;
+    // cout<<"Value of *ptr: "<<*ptr<<endl;
+    // cout<< "Post decrement operator: --"<<endl;
+    
+    // cout<<endl<<endl<<endl;
+    // cout<< "Pre decrement operator: --"<<endl;
+    // cout<<"Value of *ptr: "<<*ptr<<endl;
+    // cout<<"Value of --*ptr: "<<--*ptr<<endl;
+    // cout<<"Value of *ptr: "<<*ptr<<endl;
+    // cout<< "Pre decrement operator: --"<<endl;
+
 
 
     return 0;
