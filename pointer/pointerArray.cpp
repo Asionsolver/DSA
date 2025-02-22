@@ -1,9 +1,10 @@
-#include<iostream>
+#include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
 
-int main(){
+int main()
+{
 
     // int arr[5] = {1,5,8,7,5};
 
@@ -29,14 +30,11 @@ int main(){
     // arr = arr + 1; // error
     // int arr2 = arr + 1; // error
 
-
-
     // int *p = arr;
     // int *q = arr + 1;
     // int *r = arr + 2;
     // int *s = arr + 3;
     // int *t = arr + 4;
-
 
     // cout<<endl<<endl;
     // cout<<"p = arr: "<< p<<endl;
@@ -52,7 +50,6 @@ int main(){
     // cout<<"*s = arr + 3: "<< *s<<endl;
     // cout<<"*t = arr + 4: "<< *t<<endl;
 
-
     // cout<<*p + 3<<endl;
     // cout<<*(arr+1)<<endl;
     // cout<<1[arr]<<endl;
@@ -61,8 +58,7 @@ int main(){
     // cout<<endl<<endl;
     // cout<< "size of arr: "<<sizeof(arr)<<endl;
     // cout<<"size of p: "<<sizeof(p)<<endl;
-    // cout<<"size of *p: "<<sizeof(*p)<<endl; 
-
+    // cout<<"size of *p: "<<sizeof(*p)<<endl;
 
     // char charArr[5] = {'a','b','c','d','e'};
     // char *charP = charArr;
@@ -85,12 +81,16 @@ int main(){
     // cout<<"p + 4 = "<<p + 4<<endl;
     // cout<<"p + 5 = "<<p + 5<<endl;
 
-    char ch = 'a';
-    char *p = &ch;
-    cout<<p<<endl;
-    cout<<*p<<endl;
-    cout<<&p<<endl;
+    // char ch = 'a';
+    // char *p = &ch;
+    // cout << p << endl;
+    // cout << *p << endl;
+    // cout << &p << endl;
 
+    char name[10] = "Hello";
+    cout << "Name: " << name << endl;
+    // char *q = "Hello"; // ! Bad practice
+    // cout << "q: " << q << endl;
 
     return 0;
 }
