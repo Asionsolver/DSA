@@ -3,17 +3,17 @@
 #include <algorithm>
 using namespace std;
 
-void changeSign(int *p)
+void square(int *p)
 {
-    *p = *p * -1;
+    int a = 10;
+    p = &a;
+    *p = (*p) * (*p);
 }
 
 int main()
 {
-
     int a = 10;
-    changeSign(&a);
+    square(&a);
     cout << a << endl;
-
     return 0;
 }
