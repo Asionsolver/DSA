@@ -1,26 +1,4 @@
 {
-  "files.associations": {
-    "array": "cpp",
-    "initializer_list": "cpp",
-    "utility": "cpp",
-    "deque": "cpp",
-    "string": "cpp",
-    "unordered_map": "cpp",
-    "vector": "cpp",
-    "*.tcc": "cpp",
-    "bitset": "cpp",
-    "regex": "cpp",
-    "valarray": "cpp",
-    "list": "cpp",
-    "unordered_set": "cpp",
-    "forward_list": "cpp",
-    "iostream": "cpp",
-    "ostream": "cpp",
-    "istream": "cpp"
-  },
-  "cSpell.words": [
-    "sawblade"
-  ],
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
