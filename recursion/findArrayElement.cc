@@ -34,7 +34,7 @@ int main()
     cout << "What's number you find it: ";
     cin >> element;
 
-    int result = findElement(arr, n, element);
+    bool result = findElement(arr, n, element);
 
     if (result)
     {

@@ -1,1 +1,1 @@
-n
+bool isFirst = true
