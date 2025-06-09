@@ -30,7 +30,7 @@ int main()
         cout << name << " is palindrome word." << endl;
     }
     else
-    {
+    { 
         cout << name << " is not palindrome word." << endl;
     }
     // int j=(sizeof(name)/sizeof(name[0]))-1;

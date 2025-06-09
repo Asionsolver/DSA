@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    char name[100] = "Ashis";
+    char name[100] = "Ashis kumar ";
     
 
     int length =0;

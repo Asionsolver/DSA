@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "d:/Code/DSA/pointer/practice",
-      "program": "d:/Code/DSA/pointer/practice/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "/media/asion/All Content/Code/DSA/Array/Char Array & Strings",
+      "program": "/media/asion/All Content/Code/DSA/Array/Char Array & Strings/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

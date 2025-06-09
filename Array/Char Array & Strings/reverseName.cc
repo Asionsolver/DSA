@@ -30,7 +30,7 @@ void reverseFun(char name[], int stringLength){
 
 int main(){
 
-    char name[40]="ashis";
+    char name[40]="a-bC-dEf-ghIj";
     cout<<"The initial name is "<<name<<endl;
     int stringLength = getLength(name);
     reverseFun(name, stringLength);
