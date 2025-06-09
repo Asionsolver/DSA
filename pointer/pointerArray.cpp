@@ -81,16 +81,5 @@ int main()
     // cout<<"p + 4 = "<<p + 4<<endl;
     // cout<<"p + 5 = "<<p + 5<<endl;
 
-    // char ch = 'a';
-    // char *p = &ch;
-    // cout << p << endl;
-    // cout << *p << endl;
-    // cout << &p << endl;
-
-    char name[10] = "Hello";
-    cout << "Name: " << name << endl;
-    // char *q = "Hello"; // ! Bad practice
-    // cout << "q: " << q << endl;
-
     return 0;
 }
