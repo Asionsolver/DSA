@@ -24,7 +24,7 @@ void minMaxArray(int arr[], int size)
 
 int main()
 {
-    int arr[10] = {1, 2, 3, 4, 5, 6, 78, 5, 86, 2};
+    int arr[10] = {-1, 2, 3, -4, 5, 6, -78, 5, 86, -2};
     int size = 10;
 
     minMaxArray(arr, size);

@@ -17,7 +17,6 @@ void extremePrint(int arr[], int size)
             cout << arr[left] << endl;
             cout << arr[right] << endl;
         }
-
         left++;
         right--;
     }

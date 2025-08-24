@@ -20,6 +20,8 @@ int main()
     int size = 2;
     increment(arr, size);
     cout << endl;
-    printArray(arr, size);
+    cout << arr[0]; // 15
+    cout << endl;
+    // printArray(arr, size);
     return 0;
 }

@@ -43,7 +43,8 @@ bool validPalindrome(string s)
 
 int main()
 {
-    string s = "abddc";
+    // string s = "abddc";
+    string s = "levcl";
     if (validPalindrome(s) == 1)
     {
         cout << "This string is Valid Palindrome" << endl;
