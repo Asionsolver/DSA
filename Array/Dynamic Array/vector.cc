@@ -141,7 +141,7 @@ int main()
     //     arr{4, 3, 2, 24, 422, 223, 32};
     // vectorArray(arr);
 
-    vector<int> arr(10);
+    vector<int> arr;
 
     arr.push_back(5);
 
