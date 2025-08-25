@@ -20,12 +20,12 @@ void printColumnWiseSum(int arr[][3], int row, int col)
 
     for (row = 0; row < 3; row++)
     {
-        int rowSum = 0;
+        int colSum = 0;
         for (col = 0; col < 3; col++)
         {
-            rowSum = rowSum + arr[col][row];
+            colSum = colSum + arr[col][row];
         }
-        cout << rowSum << endl;
+        cout << colSum << endl;
     }
 }
 int main()
