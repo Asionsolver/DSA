@@ -32,6 +32,10 @@ int main()
                      {7, 5, 6},
                      {9, 8, 4}};
 
+    // or
+
+    int b;
+
     // cout << "The value is " << arr[1][3] << endl;
 
     // row-wise print
