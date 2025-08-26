@@ -80,5 +80,10 @@ int main()
     return 0;
 }
 
+// missingWithDuplicate
+// T.C -> O(n)
+// S.C -> O(1)
+
+// inPlaceSorting
 // T.C -> O(n)
 // S.C -> O(1)
