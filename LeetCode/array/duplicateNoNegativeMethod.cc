@@ -35,3 +35,6 @@ int main()
     cout << negativeMarkingMethod(nums);
     return 0;
 }
+
+// T.C -> O(n)
+// S.C -> O(1)
