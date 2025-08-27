@@ -13,9 +13,9 @@ void spiralPrint(vector<vector<int>> v)
     int totalElements = row * col;
 
     int startingRow = 0;
-    int endingCol = col - 1;
-    int endingRow = row - 1;
     int startingCol = 0;
+    int endingRow = row - 1;
+    int endingCol = col - 1;
 
     int count = 0;
     while (count < totalElements)
@@ -34,7 +34,7 @@ void spiralPrint(vector<vector<int>> v)
             ans.push_back(v[i][endingCol]);
             count++;
         }
-        endingRow--;
+        endingCol--;
 
         // Logic: print endingRow
         for (int i = endingCol; i >= startingCol && count < totalElements; i--)
@@ -62,7 +62,8 @@ void spiralPrint(vector<vector<int>> v)
 int main()
 {
 
-    vector<vector<int>> v = {{1, 2, 3, 4, 5, 6}, {7, 8, 9, 10, 11, 12}, {13, 14, 15, 16, 17, 18}, {19, 20, 21, 22, 23, 24}, {25, 26, 27, 28, 29, 30}};
+    // vector<vector<int>> v = {{1, 2, 3, 4, 5, 6}, {7, 8, 9, 10, 11, 12}, {13, 14, 15, 16, 17, 18}, {19, 20, 21, 22, 23, 24}, {25, 26, 27, 28, 29, 30}};
+    vector<vector<int>> v = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     spiralPrint(v);
     return 0;
 }
