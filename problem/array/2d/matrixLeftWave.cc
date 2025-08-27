@@ -10,19 +10,19 @@ void rightWavePrint(vector<vector<int>> arr)
 
     for (int i = 0; i < size; i++)
     {
-        // even number of column -> Left to Right
+        // even number of column -> Right to left
         if ((i & 1) == 0)
         {
-            for (int j = 0; j < colSize; j++)
-            {
-                cout << arr[i][j] << " ";
-            }
-        }
-        else
-        { // odd no of col -> Right to Left
             for (int k = colSize - 1; k >= 0; k--)
             {
                 cout << arr[i][k] << " ";
+            }
+        }
+        else
+        { // odd no of col -> Left to Right
+            for (int j = 0; j < colSize; j++)
+            {
+                cout << arr[i][j] << " ";
             }
         }
     }
