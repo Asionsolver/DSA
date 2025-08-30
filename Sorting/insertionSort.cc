@@ -1,4 +1,4 @@
-// Insertion Sort Algorithms
+// Insertion Sort is a stable sorting  algorithms
 
 #include <iostream>
 #include <vector>
