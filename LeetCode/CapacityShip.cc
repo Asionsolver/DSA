@@ -79,6 +79,6 @@ int main()
     int days = 5;
     int size = sizeof(weights) / sizeof(weights[0]);
     // int days = 3;
-    cout << "Minimum Capacity of Ship: " << bsShipPackages(weights, days, size);
+    cout << "Minimum Capacity of Ship: " << bsShipPackages(weights, days, size) << endl;
     return 0;
 }
