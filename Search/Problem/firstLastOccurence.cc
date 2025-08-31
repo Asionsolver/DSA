@@ -65,7 +65,7 @@ int main()
 
     int arr[] = {1, 1, 1, 2, 3, 4, 4, 4, 4, 5, 7, 7, 7, 8, 9, 9, 9, 9};
     int size = sizeof(arr) / sizeof(arr[0]);
-    int target = 1;
+    int target = 10;
 
     int resultFirstOccurrence = firstOccurrence(arr, size, target);
     cout << "The first occurrence index is " << resultFirstOccurrence << endl;
