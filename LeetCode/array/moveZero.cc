@@ -48,3 +48,24 @@ int main()
 
     return 0;
 }
+
+// efficient solution(Two-Pointer Approach)
+// int main()
+// {
+//     int insertPos = 0;
+//     int nums[] = {0, 1, 0, 3, 12};
+
+//     // First bring all non-zero elements to the front
+//     for (int i = 0; i < nums.size(); i++) {
+//     if (nums[i] != 0) {
+//         nums[insertPos++] = nums[i];
+//     }
+// }
+
+//     // Fill the remaining positions with zeros
+//     while (insertPos < nums.size())
+//     {
+//         nums[insertPos++] = 0;
+//     }
+// }
+// }
