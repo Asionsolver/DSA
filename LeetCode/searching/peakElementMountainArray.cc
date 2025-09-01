@@ -1,6 +1,21 @@
-// Question: Peak element in a Mountain array.
+// 852. Peak Index in a Mountain Array
 #include <iostream>
 using namespace std;
+
+// using linear search
+// int peakIndexLinear(int arr[], int size)
+// {
+//     for (int i = 1; i < size - 2; i++)
+//     {
+//         if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
+//         {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+// using binary search
 int peakIndexInMountainArray(int arr[], int size)
 {
     int s = 0;
