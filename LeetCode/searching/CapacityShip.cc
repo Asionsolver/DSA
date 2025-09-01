@@ -7,10 +7,8 @@
 #include <climits>
 using namespace std;
 
-bool check(int mid, int weights[], int days, int size)
+bool check(int mid, vector<int> &weights, int days, int size)
 {
-    // 3,2,2,4,1,4      days = 3         mid =
-
     int m = mid;
     int noOfDay = 1;
 
@@ -37,23 +35,19 @@ bool check(int mid, int weights[], int days, int size)
     }
 }
 
-int bsShipPackages(int weights[], int days, int size)
+int bsShipPackages(vector<int> &weights, int days)
 {
-
-    int max = INT_MIN;
+    int size = weights.size();
+    int maxVal = INT_MIN;
     int sum = 0;
     for (int i = 0; i < size; i++)
     {
-        if (max < weights[i])
-        {
-            max = weights[i];
-            sum += weights[i];
-        }
+        maxVal = max(maxVal, weights[i]);
+        sum += weights[i];
     }
 
-    int low = max;
+    int low = maxVal;
     int high = sum;
-
     int minCapacity = sum;
 
     while (low <= high)
@@ -70,15 +64,16 @@ int bsShipPackages(int weights[], int days, int size)
         }
     }
     return minCapacity;
-}
+};
 
 int main()
 {
-    int weights[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    // int weights[] = {3, 2, 2, 4, 1, 4};
+
+    vector<int> weights = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int days = 5;
-    int size = sizeof(weights) / sizeof(weights[0]);
+
+    // vector<int> weights = {3, 2, 2, 4, 1, 4};
     // int days = 3;
-    cout << "Minimum Capacity of Ship: " << bsShipPackages(weights, days, size) << endl;
+    cout << "Minimum Capacity of Ship: " << bsShipPackages(weights, days) << endl;
     return 0;
 }
