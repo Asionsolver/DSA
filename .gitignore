@@ -1,1 +1,38 @@
+# Ignore all output folders anywhere in the project
 **/output/
+
+# Build files
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.a
+*.lib
+
+# Debug / log files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# VSCode / IDE specific
+.vscode/
+.idea/
+*.code-workspace
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# CMake / Makefile build directories
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Backup files
+*~

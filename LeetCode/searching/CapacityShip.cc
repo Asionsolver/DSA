@@ -77,3 +77,5 @@ int main()
     cout << "Minimum Capacity of Ship: " << bsShipPackages(weights, days) << endl;
     return 0;
 }
+
+// T.C=O(n*log(sum-max))
