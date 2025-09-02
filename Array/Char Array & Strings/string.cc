@@ -51,14 +51,14 @@ int main()
     //     cout<<"a and b are not same"<<endl;
     // }
 
-    if (compareString(a, b) == 1)
-    {
-        cout << "a and b are exactly same string" << endl;
-    }
-    else
-    {
-        cout << "a and b are not same" << endl;
-    }
+    // if (compareString(a, b) == 1)
+    // {
+    //     cout << "a and b are exactly same string" << endl;
+    // }
+    // else
+    // {
+    //     cout << "a and b are not same" << endl;
+    // }
 
     // char arr [10];
     // string str [10];
@@ -75,6 +75,12 @@ int main()
 
     // cout<<arr[0]<<endl<<arr[1]<<endl<<arr[2]<<endl<<arr[3]<<endl;
     // cout<<str[0]<<endl<<str[1]<<endl<<str[2]<<endl<<str[3]<<endl;
+
+    string s;
+    // cin>>s; // only if the given string has no spaces
+    getline(cin, s);
+
+    cout << s << endl;
 
     return 0;
 }
