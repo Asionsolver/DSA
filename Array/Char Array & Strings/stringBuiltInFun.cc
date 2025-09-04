@@ -33,11 +33,14 @@ int main()
     // cout << s.substr(2) << endl;
     // cout << s.substr(2, 2) << endl;
 
-    int x = 12324;
-    string s = to_string(x);
+    // int x = 12324;
+    // string s = to_string(x);
+    // string s = "ashis";
+    string s;
+    getline(cin, s);
     cout << s << endl;
-
-    cout << s.length() << endl;
+    sort(s.begin(), s.end());
+    cout << s << endl;
 
     return 0;
 }
