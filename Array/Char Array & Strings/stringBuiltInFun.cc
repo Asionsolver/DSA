@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    string str = "Hello good morning!";
+    // string str = "Hello good morning!";
 
     // cout << str.size() << endl;
     // cout << str.length() << endl;
@@ -36,11 +36,23 @@ int main()
     // int x = 12324;
     // string s = to_string(x);
     // string s = "ashis";
-    string s;
-    getline(cin, s);
+    // string s;
+    // getline(cin, s);
+    // cout << s << endl;
+    // sort(s.begin(), s.end());
+    // cout << s << endl;
+
+    string str = "123456";
+    int x = stoi(str);
+    cout << x + 1 << endl;
+
+    int a = 123455;
+    string s = to_string(a);
     cout << s << endl;
-    sort(s.begin(), s.end());
-    cout << s << endl;
+
+    string longs = "1234567891233";
+    int xl = stoll(longs);
+    cout << xl + 1 << endl;
 
     return 0;
 }

@@ -1,0 +1,1 @@
+// Given n string & consisting of digits from 0 to 9. Return the index of string which ha maximum value.(Take 0 based indexing)
