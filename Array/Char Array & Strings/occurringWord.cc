@@ -26,7 +26,7 @@ int main()
 
     int maxCount = 1;
     int count = 1;
-    for (int i = 0; i < store.size(); i++)
+    for (int i = 1; i < store.size(); i++)
     {
         if (store[i] == store[i - 1])
         {
@@ -40,7 +40,7 @@ int main()
     }
 
     count = 1;
-    for (int i = 0; i < store.size(); i++)
+    for (int i = 1; i < store.size(); i++)
     {
         if (store[i] == store[i - 1])
         {
