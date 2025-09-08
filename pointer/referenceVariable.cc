@@ -16,13 +16,21 @@ using namespace std;
 
 void solve(int *&p)
 {
-    p = p + 1;
+    cout << endl;
+    cout << "Inside fuction" << endl;
+    cout << "p: " << p << endl;     // 0x7fff984562bc
+    cout << "*p: " << *p << endl;   // 5
+    cout << "&p: " << &p << endl;   // 0x7fff984562c0
+    cout << "*&p: " << *&p << endl; // 0x7fff984562bc
+    // p = p + 1;
+    cout << "Inside fuction" << endl;
+    cout << endl;
 }
 int main()
 {
     // int a = 5;
 
-    // creating a reference variable
+    // creating a reference variable. Reference variable means same memory location different name
     // int &b = a;
 
     // cout << "a: " << a << endl;
@@ -59,9 +67,8 @@ int main()
     int *p = &a;
 
     cout << "Before calling solve function" << endl;
-
-    cout << "p: " << p << endl;
-
+    cout << "p: " << p << endl;   // 0x7fff984562bc
+    cout << "&p: " << &p << endl; // 0x7fff984562c0
     cout << "Before calling solve function" << endl;
 
     solve(p);
@@ -69,7 +76,7 @@ int main()
     cout << "After calling solve function" << endl;
 
     cout << "p: " << p << endl;
-
+    cout << "&p: " << &p << endl;
     cout << "After calling solve function" << endl;
     return 0;
 }
