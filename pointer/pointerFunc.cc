@@ -5,7 +5,10 @@ using namespace std;
 
 // void variablePointer(int *p)
 // {
-//     *p = *p + 10;
+//     cout << "&p-> " << &p << endl; // p address
+//     cout << "p-> " << p << endl;   // p point a address so print a address
+//     cout << "*p-> " << *p << endl; // p point a address so print a value
+//     *p = *p + 10;                  // 10 + 10
 // }
 
 void update(int *p, int *q)
@@ -21,6 +24,7 @@ void update(int *p, int *q)
 //     cout << "arr: " << arr << endl;
 //     cout << "&arr: " << &arr << endl;
 // }
+
 int main()
 {
 
@@ -49,7 +53,11 @@ int main()
 
     // int a = 10;
     // int *p = &a;
-    // cout << "Before calling function: " << a << endl;
+    // cout << "&a-> " << &a << endl; // a address
+    // cout << "p-> " << p << endl;   // p point a address so print a address
+    // cout << "*p-> " << *p << endl; // p point a address so print a value
+
+    // cout << "Before calling function: " << a << endl; // 10
     // variablePointer(p);
     // cout << "After calling function: " << a << endl;
 
@@ -57,12 +65,19 @@ int main()
 
     int *p = &arr[1];
     int *q = &arr[2];
-
+    cout << "arr-> " << arr << endl;
+    cout << "&arr[1]-> " << &arr[1] << endl;
+    cout << "&arr[2]-> " << &arr[2] << endl;
+    cout << "arr[1]-> " << arr[1] << endl;
+    cout << "arr[2]-> " << arr[2] << endl;
+    cout << "p-> " << p << endl;
+    cout << "*p-> " << *p << endl;
     cout << "Before calling function: " << *p << " " << *q << endl;
-
     update(p, q);
-
     cout << "After calling function: " << *p << " " << *q << endl;
+
+    cout << "arr[1]-> " << arr[1] << endl;
+    cout << "arr[2]-> " << arr[2] << endl;
 
     return 0;
 }
