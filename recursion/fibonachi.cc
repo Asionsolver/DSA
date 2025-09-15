@@ -33,3 +33,5 @@ int main()
 
     return 0;
 }
+
+// T.C = O(2^n)
