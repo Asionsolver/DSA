@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/media/ashis/All Content/Code/DSA/LeetCode",
-      "program": "/media/ashis/All Content/Code/DSA/LeetCode/build/Debug/outDebug",
+      "cwd": "/media/ashis/All Content/Code/DSA",
+      "program": "/media/ashis/All Content/Code/DSA/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
